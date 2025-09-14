@@ -45,7 +45,7 @@ export default function Navbar() {
       </ul>
 <Link to="contact">
       <button
-       className="bg-yellow-400 text-black px-4 py-2 rounded-full font-bold hidden md:block">
+       className="bg-yellow-400 text-black px-4 py-2 rounded-full font-bold  md:block">
         HIRE ME →
       </button>
       </Link>
