@@ -1,0 +1,19 @@
+@import "tailwindcss";
+.active-nav { color: #f59e0b; } /* amber-400 */
+::-webkit-scrollbar {
+  width: 2px; /* width of vertical scrollbar */
+  height: 8px; /* height of horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9; /* light background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #38bdf8; /* sky blue */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9; /* darker sky blue on hover */
+}

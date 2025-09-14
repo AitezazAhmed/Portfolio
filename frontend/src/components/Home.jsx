@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import { FaFacebookF, FaInstagram, FaTelegramPlane, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -39,9 +39,9 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           <motion.img
-            src="https://i.ibb.co/yPHQKp3/profile.png"
+            src="/profile.JPG"
             alt="profile"
-            className="rounded-xl shadow-lg w-50 md:w-55"
+            className="rounded-xl shadow-lg w-50 md:w-55 border-4"
             whileHover={{ scale: 1.05, rotate: 2 }}
             transition={{ type: "spring", stiffness: 200 }}
           />
@@ -64,25 +64,25 @@ const Home = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
           >
             <a
-              href="#"
+              href="https://web.facebook.com/profile.php?id=100036949600449"
               className="p-3 bg-white/20 rounded-full hover:bg-yellow-400 transition"
             >
               <FaFacebookF />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/itx_aitezaz/"
               className="p-3 bg-white/20 rounded-full hover:bg-yellow-400 transition"
             >
               <FaInstagram />
             </a>
             <a
-              href="#"
+              href="https://github.com/AitezazAhmed"
               className="p-3 bg-white/20 rounded-full hover:bg-yellow-400 transition"
             >
-              <FaTelegramPlane />
+              <FaGithub/>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/aitezaz-ahmed-888b9233a/"
               className="p-3 bg-white/20 rounded-full hover:bg-yellow-400 transition"
             >
               <FaLinkedinIn />
