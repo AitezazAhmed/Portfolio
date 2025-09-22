@@ -23,7 +23,7 @@ const projects = [
     img: "auto.png",
     desc: "An AI-powered SaaS platform for content, image, and code generation integrated with OpenAI APIs.",
     tech: ["React", "Node.js", "MongoDB", "Grok AI"],
-    live: "#",
+    live: "https://auto-genie-gq5p.vercel.app/",
     github: "https://github.com/AitezazAhmed/AutoGenie",
   },
 ];
