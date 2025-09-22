@@ -56,7 +56,7 @@ const Works = () => {
             key={index}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: index * 0.1 }}
+            transition={{ duration: 0.1, delay: index * 0.1 }}
             viewport={{ once: true }}
             className="bg-white rounded-2xl shadow-lg overflow-hidden border border-sky-100 hover:shadow-2xl transition-transform transform hover:scale-105"
           >
