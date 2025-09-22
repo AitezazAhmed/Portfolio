@@ -68,7 +68,7 @@ const Services = () => {
             key={index}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
+            transition={{ duration: 0.25, delay: index * 0.02 }}
             viewport={{ once: true }}
             className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:scale-105 hover:shadow-2xl transition-transform"
           >
