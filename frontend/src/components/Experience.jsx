@@ -21,7 +21,7 @@ export default function Experience() {
     {
       year: "2025",
       title: "Exploring AI SaaS",
-      desc: "Started AutoGenie 🚀, an AI-powered SaaS tool combining content, code, and image generation.",
+      desc: "Started AutoGenie 🚀, an AI-powered SaaS tool combining content, code, and Q&A / Knowledge Assistant.",
       icon: <FaBrain />,
       color: "bg-sky-400",
     },
