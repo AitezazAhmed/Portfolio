@@ -19,7 +19,7 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           <h2 className="text-5xl md:text-6xl font-extrabold leading-tight">
-            MERN STACK <br /> DEVELOPERR
+            MERN STACK <br /> DEVELOPER
           </h2>
           <p className="mt-6 font-semibold">HI, I AM AITEZAZ</p>
           <p className="mt-2 text-gray-200 max-w-md">
