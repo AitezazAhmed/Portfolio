@@ -43,17 +43,41 @@ const experiences = [
   return (
     <section
       id="experience"
-      className="min-h-screen overflow-hidden bg-gradient-to-b from-gray-50 to-gray-200 flex flex-col items-center py-20 px-6"
+      className="min-h-screen overflow-hidden  flex flex-col items-center py-20 px-6"
+      style={{ background: "linear-gradient(180deg, #f0f7ff 0%, #e8f4fd 50%, #f0f7ff 100%)" }}
     >
-      <motion.h2
-        className="text-4xl font-extrabold text-blue-600 mb-12"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-5 border"
+        style={{
+          background: "rgba(37,99,235,0.06)",
+          borderColor: "rgba(37,99,235,0.15)",
+        }}
       >
-        Experience Timeline
-      </motion.h2>
-
+        <span
+          className="w-1.5 h-1.5 rounded-full"
+          style={{ background: "linear-gradient(135deg,#2563eb,#38bdf8)" }}
+        />
+        <span className="text-sm font-semibold text-blue-600 tracking-wide">Experience</span>
+      </motion.div>
+    <motion.h2
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="text-4xl sm:text-5xl font-black text-gray-900 mb-4 tracking-tight"
+          >
+            Experience{" "}
+            <span
+              className="text-transparent bg-clip-text"
+              style={{ backgroundImage: "linear-gradient(135deg, #2563eb, #38bdf8)" }}
+            >
+              Timeline
+            </span>
+          </motion.h2>
       <div className="relative w-full max-w-3xl">
         {/* Vertical Line */}
         <div

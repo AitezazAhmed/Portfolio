@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 import { FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const stagger = {
@@ -106,22 +107,31 @@ const Home = () => {
             >
               {/* CTA buttons */}
               <div className="flex gap-3">
-                <a
-                  href="#works"
-                  className="px-5 py-2.5 rounded-xl text-sm font-semibold text-blue-900 transition-all duration-200 hover:scale-[1.03] active:scale-95"
-                  style={{
-                    background: "linear-gradient(135deg, #e0f2fe, #bae6fd)",
-                    boxShadow: "0 4px 18px rgba(186, 230, 253, 0.35)",
-                  }}
-                >
-                  View Projects
-                </a>
-                <a
-                  href="#contact"
-                  className="px-5 py-2.5 rounded-xl text-sm font-semibold text-sky-200 border border-sky-400/40 hover:bg-white/10 transition-all duration-200 hover:scale-[1.03] active:scale-95"
-                >
-                  Contact Me
-                </a>
+             <Link
+  to="works"
+  spy={true}
+  smooth={true}
+  offset={-70}
+  duration={500}
+  className="px-5 py-2.5 rounded-xl text-sm font-semibold text-blue-900 transition-all duration-200 hover:scale-[1.03] active:scale-95 cursor-pointer"
+  style={{
+    background: "linear-gradient(135deg, #e0f2fe, #bae6fd)",
+    boxShadow: "0 4px 18px rgba(186, 230, 253, 0.35)",
+  }}
+>
+  View Projects
+</Link>
+
+<Link
+  to="contact"
+  spy={true}
+  smooth={true}
+  offset={-70}
+  duration={500}
+  className="px-5 py-2.5 rounded-xl text-sm font-semibold text-sky-200 border border-sky-400/40 hover:bg-white/10 transition-all duration-200 hover:scale-[1.03] active:scale-95 cursor-pointer"
+>
+  Contact Me
+</Link>
               </div>
 
               {/* Divider dot */}
