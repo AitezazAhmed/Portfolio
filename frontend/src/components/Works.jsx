@@ -51,7 +51,19 @@ const webProjects = [
 ];
 
 // Add your React Native / Expo mobile projects here when ready
-const appProjects = [];
+const appProjects = [
+ {
+  title: "BookWorm App",
+  img: "/BookWorm.jpeg",
+  desc: "A React Native (Expo) mobile app that helps users discover books, get recommendations, and view ratings. Includes authentication and personalized user experience powered by JWT-based login system.",
+  tech: ["React Native (Expo)", "Node.js", "MongoDB", "JWT Authentication"],
+  live: "https://drive.google.com/file/d/1ssCQ0cZcYp6-XPkzBaNVhsvrDMmYIXd8/view?usp=drivesdk",
+  github: "https://github.com/AitezazAhmed/Book-Store-App",
+  badge: "Book Recommendation",
+  gradient: "from-purple-600 to-pink-500",
+}
+  ,
+];
 
 const ArrowIcon = () => (
   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -296,7 +308,9 @@ const Works = () => {
                   }}
                 >
                   {/* Image */}
-                  <div className="relative overflow-hidden" style={{ height: "210px" }}>
+                  <div className={`relative overflow-hidden ${
+  activeTab === "app" ? "h-[440px]" : "h-[210px]"
+}`}>
                     <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500 z-10`} />
                     <img src={project.img} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10" />
@@ -321,15 +335,32 @@ const Works = () => {
                     </div>
                     <div className="w-full h-px bg-gray-50" />
                     <div className="flex items-center gap-3">
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="flex-1 flex items-center justify-center gap-2 text-white text-sm font-semibold py-2.5 rounded-xl transition-all duration-200 hover:opacity-90 hover:shadow-md active:scale-95"
-                        style={{ background: "linear-gradient(135deg, #2563eb, #38bdf8)", boxShadow: "0 4px 14px rgba(37,99,235,0.3)" }}
-                      >
-                        Live Demo <ArrowIcon />
-                      </a>
+                    {activeTab === "web" ? (
+  <a
+    href={project.live}
+    target="_blank"
+    rel="noreferrer"
+    className="flex-1 flex items-center justify-center gap-2 text-white text-sm font-semibold py-2.5 rounded-xl transition-all duration-200 hover:opacity-90 hover:shadow-md active:scale-95"
+    style={{
+      background: "linear-gradient(135deg, #2563eb, #38bdf8)",
+      boxShadow: "0 4px 14px rgba(37,99,235,0.3)",
+    }}
+  >
+    Live Demo <ArrowIcon />
+  </a>
+) : (
+  <a
+    href={project.live}
+    download
+    className="flex-1 flex items-center justify-center gap-2 text-white text-sm font-semibold py-2.5 rounded-xl transition-all duration-200 hover:opacity-90 hover:shadow-md active:scale-95"
+    style={{
+      background: "linear-gradient(135deg, #2563eb, #38bdf8)",
+      boxShadow: "0 4px 14px rgba(37,99,235,0.3)",
+    }}
+  >
+    Download <ArrowIcon />
+  </a>
+)}
                       <a
                         href={project.github}
                         target="_blank"
