@@ -61,8 +61,7 @@ const appProjects = [
   github: "https://github.com/AitezazAhmed/Book-Store-App",
   badge: "Book Recommendation",
   gradient: "from-purple-600 to-pink-500",
-}
-  ,
+},
 ];
 
 const ArrowIcon = () => (
